@@ -1,0 +1,53 @@
+#mainSlider .owl-carousel .owl-item img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+#mainSlider button.owl-prev, #mainSlider button.owl-next { 
+    position: absolute;
+    top: 45%;
+    font-size: 28px;
+    color: #fff;
+    background-color: transparent!important;
+}
+
+#mainSlider .owl-prev{
+    left: 10px;
+}
+#mainSlider .owl-next{
+    right:10px
+}
+
+#mainSlider .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+#mainSlider  .item{
+    position: relative;
+}
+
+#mainSlider  .caption {
+    position: absolute;
+    top: 25%;
+    left: 20px;
+    color: #fff;
+    width: 50%;
+    z-index: 10;
+    
+}
+#mainSlider  .caption h3{
+    line-height: 1;
+}
+#mainSlider .item::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, black 0, black 10%, transparent);
+}
